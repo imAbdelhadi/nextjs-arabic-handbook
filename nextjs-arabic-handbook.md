@@ -1,10 +1,11 @@
+<div dir="rtl">
 السلام عليكم ورحمة الله، أسعد الله صباحكم والمساء أحبتي الكرام.
 
 ## مقدمة المترجم
 
 قبيل شهر رمضان الكريم 2021 كتبت على حسابي [بتويتر](https://twitter.com/elh4di) و[لينكدإن](https://www.linkedin.com/in/djafer/) أنني سأبدء نشر سلسلة مترجمة إلى العربية لإطار عمل Next.js التي عرفتها أكثر من سنة من الإستخدام وتطوير المشاريع الرقمية المختلفة. جلعتني أنتقل من بيئة رياكت الكلاسيكية إلى بيئة عمل مساعدة مختصرة للوقت والجهد، لست مضطراً مثلما كنت بالسابق إلى تجهيز بيئة التطوير يدوياً (create-react-app) وتنصيب مئات المكتبات الأخرى عدا مئات الأسطر لتعريف صفحات متداخلة ..إلى آخره من الشفرات المكررة في كل مشروع.
 
-بعدما رأيت فوائدها على إنتاجيتي فكرت في كتابة مقال يتحدث عنها، ثم ما لبثت أن قررت ترجمة كتّيب حولها لتبقى مرجعاً للأمة العربية والإسلامية مثلما عملت مع [مكتبة Alpine.js](https://blog.abdelhadi.org/alpinejs-in-arabic/). 
+بعدما رأيت فوائدها على إنتاجيتي فكرت في كتابة مقال يتحدث عنها، ثم ما لبثت أن قررت ترجمة كتّيب حولها لتبقى مرجعاً للأمة العربية والإسلامية مثلما عملت مع [مكتبة Alpine.js](https://blog.abdelhadi.org/alpinejs-in-arabic/).
 
 هذا الكتيّب يحوي 120 صفحة بعد ترخيص من كاتبها [فلافيُو كوبس](https://flaviocopes.com/page/nextjs-handbook/). كان قد شرحها مطلع سنة 2019 بنسخة Next.js إصدار 9 القديم. والآن وصل إصدار الإطار العمل إلى النسخة 10+ وقد ألغيت العديد من الخصائص والأدوات. فعمدت إلى تنقيحها وتحديثها من جديد كما عمدت إلى تعريف وشرح مصطلحات إضافية مثل "built-in" مثلا لم يشرحها الكاتب لمعرفتي بعدم توفّرها باللغة العربية.
 
@@ -15,8 +16,6 @@
 ### نماذج عربية
 
 قمت ببناء مشاريع عربية كثيرة باستخدام Next.js منها [محرّر دوّن](https://dawin.io/) الذي بينته عبر سلسلة [تحدي بناء محرّر نصوص ماركداون عربي](https://blog.abdelhadi.org/building-in-public-arabic-Markdown-editor/) وهناك نماذج أخرى مثل مشروع [معجمي](https://mujami.alsharekh.org/) التابع لشركة صخر سبق وأن كتبت عنه بـ [مجتمع حسوب](https://io.hsoub.com/webdev/115922-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%85%D8%B9%D8%AC%D9%85%D9%8A-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D9%86-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B5%D8%AE%D8%B1-%D8%A8%D9%86%D9%8A%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-nextjs-%D9%88-tailwind-%D9%88-context-api) وغيره [المعجم المعاصر](https://lexicon.alsharekh.org/).
-
-
 
 ## الفهرس
 
@@ -146,11 +145,11 @@ Next.js و[Gatsby](https://www.gatsbyjs.com/)، هما أداتان قويتان
 
 يمكننا اختيار مسارين الآن: استخدام `create-next-app` أو الأسلوب التقليدي الذي يتضمن تثبيت وإعداد تطبيق Next يدويًا.
 
-### باستخدام create-next-app 
+### باستخدام create-next-app
 
 إذا كنت معتادًا على ذلك [`create-react-app`](https://nextjs.org/docs/api-reference/create-next-app)،`create-next-app`فهذا هو الشيء نفسه -باستثناء أنه ينشئ تطبيق Next بدلاً من تطبيق React، كما يوحي الاسم.
 
-أفترض أنك قمت بتثبيت Node.js سلفا، والذي يأتي مع الأمر [npx](https://docs.npmjs.com/cli/v7/commands/npx)  بداية من الإصدار 5.2 مثلاً منذ أكثر من عامين في وقت كتابة هذا الكتيّب. تتيح لنا هذه الأداة المفيدة تنزيل أمر JavaScript وتنفيذه، وسنستخدمه على النحو التالي:
+أفترض أنك قمت بتثبيت Node.js سلفا، والذي يأتي مع الأمر [npx](https://docs.npmjs.com/cli/v7/commands/npx) بداية من الإصدار 5.2 مثلاً منذ أكثر من عامين في وقت كتابة هذا الكتيّب. تتيح لنا هذه الأداة المفيدة تنزيل أمر JavaScript وتنفيذه، وسنستخدمه على النحو التالي:
 
 ```text
 npx create-next-app
@@ -178,7 +177,7 @@ npx create-next-app --example blog-starter
 
 ![20210407-18-upfd29](https://i.suar.me/dXGOz/l)
 
-### إنشاء تطبيق Next.js يدويًا 
+### إنشاء تطبيق Next.js يدويًا
 
 يمكنك تجنب طريقة `create-next-app` إذا كنت ترغب في إنشاء تطبيق Next من البداية. وإليك الفكرة:
 
@@ -216,7 +215,7 @@ npm install next react react-dom
 
 **الأول:**
 
-- `package.json` [تصفّح الدليل التوثيقي للحزم](https://docs.npmjs.com/cli/v7/configuring-npm/package-json/) 
+- `package.json` [تصفّح الدليل التوثيقي للحزم](https://docs.npmjs.com/cli/v7/configuring-npm/package-json/)
 - `package-lock.json` [تصفّح الدليل التوثيقي حول قفل الحزمة](https://docs.npmjs.com/cli/v7/configuring-npm/package-lock-json)
 
 **الثاني:**
@@ -239,7 +238,7 @@ npm install next react react-dom
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies":  {
+  "dependencies": {
     "next": "^10.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
@@ -272,9 +271,9 @@ const Index = () => (
   <div>
     <h1>Home page</h1>
   </div>
-)
+);
 
-export default Index
+export default Index;
 ```
 
 الآن باستخدام الطرفية Terminal، قم بتشغيل `npm run dev`لبدء خادوم التطوير Next.
@@ -291,15 +290,15 @@ export default Index
 
 دعنا نتحقق من أن التطبيق يعمل، يمكن ملاحظة قوة Next.js عند استخدامها، حيث يقوم بعرض الصفحات من جانب الخادوم ويتم تسليم الـHTML إلى المتصفّح، والذي له ثلاث فوائد رئيسة:
 
-* لا يحتاج متصفّح المستخدم إلى عرض React مما سيجعل التطبيق سريعاً.
-* ستقوم محركات البحث بفهرسة الصفحات دون الحاجة إلى تشغيل JavaScript من جانب المستخدم. بدأت محركات Google بحلّ هذه المشكلة، ولكن اعترفت لاحقاً بأنها عملية بطيئة وتأخر الأرشفة كما يجب عليك بصفتك منشئا للتطبيق مساعدة Google قدر الإمكان، إذا كنت ترغب في الحصول على ترتيب بحث جيد.
-* يمكنك الحصول على معاينات وصفية meta tags لمعلومات تطبيقك على مواقع التواصل الاجتماعي وتخصيص العنوان والوصف لأي من صفحاتك المشتركة على Facebook وTwitter وما إلى ذلك.
+- لا يحتاج متصفّح المستخدم إلى عرض React مما سيجعل التطبيق سريعاً.
+- ستقوم محركات البحث بفهرسة الصفحات دون الحاجة إلى تشغيل JavaScript من جانب المستخدم. بدأت محركات Google بحلّ هذه المشكلة، ولكن اعترفت لاحقاً بأنها عملية بطيئة وتأخر الأرشفة كما يجب عليك بصفتك منشئا للتطبيق مساعدة Google قدر الإمكان، إذا كنت ترغب في الحصول على ترتيب بحث جيد.
+- يمكنك الحصول على معاينات وصفية meta tags لمعلومات تطبيقك على مواقع التواصل الاجتماعي وتخصيص العنوان والوصف لأي من صفحاتك المشتركة على Facebook وTwitter وما إلى ذلك.
 
 دعونا نلقي نظرة على مصدر التطبيق. باستخدام Chrome، يمكنك النقر بزر الفأرة الأيمن في أي مكان في الصفحة ، والضغط على "**عرض مصدر الصفحة"**.
 
 ![](https://i.suar.me/AAJeB/)
 
-إذا قمت بعرض مصدر الصفحة ، فسترى `<div><h1>Home page</h1></div>`المقتطف في وسم HTML  `body`، جنبًا إلى جنب مع مجموعة من ملفات JavaScript -حزم التطبيقات-.
+إذا قمت بعرض مصدر الصفحة ، فسترى `<div><h1>Home page</h1></div>`المقتطف في وسم HTML `body`، جنبًا إلى جنب مع مجموعة من ملفات JavaScript -حزم التطبيقات-.
 
 لا نحتاج إلى إعدادات أخرى، فالعرض من جانب الخادوم SSR يعمل بالفعل.
 
@@ -316,30 +315,72 @@ export default Index
 ```html
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
     <meta name="next-head-count" content="2" />
-    <link rel="preload" href="/_next/static/development/pages/index.js?ts=1572863116051" as="script" />
-    <link rel="preload" href="/_next/static/development/pages/_app.js?ts=1572863116051" as="script" />
-    <link rel="preload" href="/_next/static/runtime/webpack.js?ts=1572863116051" as="script" />
-    <link rel="preload" href="/_next/static/runtime/main.js?ts=1572863116051" as="script" />
-</head>
+    <link
+      rel="preload"
+      href="/_next/static/development/pages/index.js?ts=1572863116051"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/development/pages/_app.js?ts=1572863116051"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/runtime/webpack.js?ts=1572863116051"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/runtime/main.js?ts=1572863116051"
+      as="script"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="__next">
-        <div>
-            <h1>Home page</h1></div>
+      <div>
+        <h1>Home page</h1>
+      </div>
     </div>
     <script src="/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js?ts=1572863116051"></script>
-    <script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true}</script>
-    <script async="" data-next-page="/" src="/_next/static/development/pages/index.js?ts=1572863116051"></script>
-    <script async="" data-next-page="/_app" src="/_next/static/development/pages/_app.js?ts=1572863116051"></script>
-    <script src="/_next/static/runtime/webpack.js?ts=1572863116051" async=""></script>
-    <script src="/_next/static/runtime/main.js?ts=1572863116051" async=""></script>
-</body>
-
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "dataManager": "[]",
+        "props": { "pageProps": {} },
+        "page": "/",
+        "query": {},
+        "buildId": "development",
+        "nextExport": true,
+        "autoExport": true
+      }
+    </script>
+    <script
+      async=""
+      data-next-page="/"
+      src="/_next/static/development/pages/index.js?ts=1572863116051"
+    ></script>
+    <script
+      async=""
+      data-next-page="/_app"
+      src="/_next/static/development/pages/_app.js?ts=1572863116051"
+    ></script>
+    <script
+      src="/_next/static/runtime/webpack.js?ts=1572863116051"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/runtime/main.js?ts=1572863116051"
+      async=""
+    ></script>
+  </body>
 </html>
 ```
 
@@ -386,7 +427,7 @@ export default Index
 
 ![](https://i.suar.me/xNEnr/)
 
-يخبرك هذا الرمز، الذي _يظهر فقط في وضع التطوير (development mode)، أن الصفحة مؤهلة للتحسين التلقائي الثابت، مما يعني بشكل أساسي أنها لا تعتمد على البيانات التي يتم جلبها في وقت الاستدعاء، ويمكن عرضها مسبقًا وبناء ملف HTML ثابت في وقت البناء عند تشغيل `npm run build`.
+يخبرك هذا الرمز، الذي \_يظهر فقط في وضع التطوير (development mode)، أن الصفحة مؤهلة للتحسين التلقائي الثابت، مما يعني بشكل أساسي أنها لا تعتمد على البيانات التي يتم جلبها في وقت الاستدعاء، ويمكن عرضها مسبقًا وبناء ملف HTML ثابت في وقت البناء عند تشغيل `npm run build`.
 
 ويمكن تحديد هذا من خلال عدم وجود `getInitialProps()` المرفقة داخل مكوّن الصفحة.
 
@@ -454,8 +495,6 @@ export default Index
 
 يمكنك أيضًا استخدام المصحح في برنامج Vscode لتصحيح أخطاء التعليمات البرمجية من جانب الخادوم. [هذه مقاطع تعليمية](https://github.com/Microsoft/vscode-recipes/tree/master/Next-js) تشرح الأمر.
 
-
-
 ## إضافة صفحات ثانية للمشروع <a id="p11"></a>
 
 الآن بعد أن أصبح لدينا فهم جيد للأدوات التي يمكننا استخدامها لمساعدتنا في تطوير تطبيقات Next.js، دعنا نواصل من حيث توقفنا بتطبيقنا الأول:
@@ -466,9 +505,7 @@ export default Index
 
 ![20210415-18-17461ob](https://i.suar.me/zxB6v/l)
 
-بعد حفظ الملف الجديد، ننفّذ الأمر `npm run dev` ،  إذا قمت بتشغيله سابقاً فلا حاجة لإعادة تشغيله.
-
-
+بعد حفظ الملف الجديد، ننفّذ الأمر `npm run dev` ، إذا قمت بتشغيله سابقاً فلا حاجة لإعادة تشغيله.
 
 ![20210415-19-tc5irm](https://i.suar.me/ZjY1M/)
 
@@ -491,22 +528,20 @@ export default () => (
   <div>
     <h1>Blog</h1>
   </div>
-)
+);
 ```
 
 أو إذا كنت تفضل صيغة الوظيفة العادية:
 
 ```js
-export default function() {
+export default function () {
   return (
     <div>
       <h1>Blog</h1>
     </div>
-  )
+  );
 }
 ```
-
-
 
 ## ربط صفحتين مع بعض <a id="p12"></a>
 
@@ -517,31 +552,31 @@ export default function() {
 نقوم باستيرادها:
 
 ```js
-import Link from 'next/link'
+import Link from "next/link";
 ```
 
 ثم نستخدمها بتضمين `a tags`، مثل هذه:
 
 ```js
-import Link from 'next/link'
+import Link from "next/link";
 
 const Index = () => (
   <div>
     <h1>Home page</h1>
-    <Link href='/blog'>
+    <Link href="/blog">
       <a>Blog</a>
     </Link>
   </div>
-)
+);
 
-export default Index
+export default Index;
 ```
 
 الآن إذا أعدنا محاولة فحص الصفحة مثلما فعلنا سابقًا، فستتمكن من رؤية أن صفحة `blog.js` يتم تحميل الحزمة الخاصة بها فقط:
 
 ![img](https://i.suar.me/EArYr/)
 
-تم تحميل الصفحة بشكل أسرع، حتى أن أيقونة التحميل بأعلى صفحة التبويب لن تظهر. 
+تم تحميل الصفحة بشكل أسرع، حتى أن أيقونة التحميل بأعلى صفحة التبويب لن تظهر.
 
 ماذا لو ضغطت الآن على زر العودة؟ لن يتم تحميل أي شيء، لأن المتصفح لا يزال يحتوي على الحزمة القديمة `index.js`، وجاهزة لتحميل صفحة`/index`. كل شيء تلقائي!
 
@@ -561,19 +596,19 @@ export default Index
 
 ماذا أقصد **بالمُوجّه (Router)**؟
 
-الموجه عبارة عن مكتبة مقدمة من Next.js. نستوردها من `next/router`: 
+الموجه عبارة عن مكتبة مقدمة من Next.js. نستوردها من `next/router`:
 
 ```js
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 ```
 
 وبمجرد الانتهاء من ذلك نعرّف `useRouter`، بإنشاء مثيل لكائن الموجّه باستخدام:
 
 ```js
-const router = useRouter()
+const router = useRouter();
 ```
 
-بمجرد أن نعرّف كائن الموجّه هذا، يمكننا استخراج المعلومات منه. 
+بمجرد أن نعرّف كائن الموجّه هذا، يمكننا استخراج المعلومات منه.
 
 على وجه المثال، يمكننا الحصول على الجزء الديناميكي من عنوان URL في ملف `[id].js` عن طريق الوصول إليه عبر `router.query.id`.
 
@@ -584,18 +619,18 @@ const router = useRouter()
 قم بإنشاء الملف على مسار `pages/blog/[id].js`
 
 ```js
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
       <h1>Blog post</h1>
       <p>Post id: {router.query.id}</p>
     </>
-  )
-}
+  );
+};
 ```
 
 الآن إذا تصفّحت الرابط `http://localhost:3000/blog/test` ، سترى هذه:
@@ -620,21 +655,21 @@ export default () => {
 الآن يمكننا استيراده والبحث عن التدوينة من المعرّف `id`:
 
 ```js
-import { useRouter } from 'next/router'
-import posts from '../../posts.json'
+import { useRouter } from "next/router";
+import posts from "../../posts.json";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const post = posts[router.query.id]
+  const post = posts[router.query.id];
 
   return (
     <>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </>
-  )
-}
+  );
+};
 ```
 
 عند إعادة تحميل الصفحة المفروض ستظهر لنا هذه:
@@ -647,25 +682,25 @@ export default () => {
 
 لماذا؟ لأنه أثناء العرض، وعندما تتم تهيئة المكون، لم تجهّز البيانات بعد. سنرى كيفية توفير البيانات للمكون باستخدام `getInitialProps` في الدرس التالي.
 
-في الوقت الحالي، أضف القليل من التحقق  `if (!post) return <p></p>` قبل إرجاع JSX:
+في الوقت الحالي، أضف القليل من التحقق `if (!post) return <p></p>` قبل إرجاع JSX:
 
 ```js
-import { useRouter } from 'next/router'
-import posts from '../../posts.json'
+import { useRouter } from "next/router";
+import posts from "../../posts.json";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const post = posts[router.query.id]
-  if (!post) return <p></p>
+  const post = posts[router.query.id];
+  if (!post) return <p></p>;
 
   return (
     <>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </>
-  )
-}
+  );
+};
 ```
 
 الآن يجب أن تعمل الصفحة بشكل عادي. في البداية يتم تقديم المكون بدون إستعلام عن البيانات `router.query.id`. وبعد التقديم، يقوم Next.js بتشغيل تحديث بقيمة الاستعلام وتعرض الصفحة المعلومات الصحيحة.
@@ -679,7 +714,7 @@ export default () => {
 يمكننا إكمال مثال المدونة بإدراج تلك التدوينات في `pages/blog.js`:
 
 ```js
-import posts from '../posts.json'
+import posts from "../posts.json";
 
 const Blog = () => (
   <div>
@@ -687,20 +722,20 @@ const Blog = () => (
 
     <ul>
       {Object.entries(posts).map((value, index) => {
-        return <li key={index}>{value[1].title}</li>
+        return <li key={index}>{value[1].title}</li>;
       })}
     </ul>
   </div>
-)
+);
 
-export default Blog
+export default Blog;
 ```
 
 ويمكننا ربطهم بصفحات التدوينات فرادى، عن طريق إستيراد مكتبة `Link` منها `next/link` واستخدامها داخل حلقة التدوينات:
 
 ```js
-import Link from 'next/link'
-import posts from '../posts.json'
+import Link from "next/link";
+import posts from "../posts.json";
 
 const Blog = () => (
   <div>
@@ -710,22 +745,22 @@ const Blog = () => (
       {Object.entries(posts).map((value, index) => {
         return (
           <li key={index}>
-            <Link href='/blog/[id]' as={'/blog/' + value[0]}>
+            <Link href="/blog/[id]" as={"/blog/" + value[0]}>
               <a>{value[1].title}</a>
             </Link>
           </li>
-        )
+        );
       })}
     </ul>
   </div>
-)
+);
 
-export default Blog
+export default Blog;
 ```
 
 ## التحضير المُسبق Prefetching<a id="p15"></a>
 
-تحدثنا سابقاً عن `Link`  أنها تربط الصفحات فيما بينها، وعندما تستخدمه، **يتعامل** Next.js **بشفافية مع توجيه صفحات العرض** لنا، لذلك عندما ينقر المستخدم على الرابط، تهتم الواجهة الأمامية بإظهار جديد الصفحة دون تشغيل طلب بين العميل والخادوم ودورة استجابة جديدة، كما يحدث عادةً مع صفحات الويب.
+تحدثنا سابقاً عن `Link` أنها تربط الصفحات فيما بينها، وعندما تستخدمه، **يتعامل** Next.js **بشفافية مع توجيه صفحات العرض** لنا، لذلك عندما ينقر المستخدم على الرابط، تهتم الواجهة الأمامية بإظهار جديد الصفحة دون تشغيل طلب بين العميل والخادوم ودورة استجابة جديدة، كما يحدث عادةً مع صفحات الويب.
 
 هناك شيء آخر يقدمه لك Next.js عندما تستخدم `Link`.
 
@@ -733,7 +768,7 @@ export default Blog
 
 يتم تشغيل هذا الأسلوب فقط في **وضع النشر أو الإنتاج (Production Mode)** (سنتحدث عن هذا بالتفصيل لاحقًا)، يعني أنه يجب عليك إيقاف التطبيق إذا كنت تقوم بتشغيله `npm run dev`، وتجميع حزمة الإنتاج الخاصة بك `npm run build`وتشغيلها `npm run start`.
 
-باستخدام فاحص الشبكة (Network inspector) في DevTools، ستلاحظ أن جميع الروابط الموجودة في الجزء المرئي من الصفحة عند تحميلها ستبدأ في التحضير المُسبق فورًا بعد تشغيل حدث  `load`على صفحتك (يتم تشغيله عند تحميل الصفحة بالكامل، ويحدث بعد `DOMContentLoaded`)
+باستخدام فاحص الشبكة (Network inspector) في DevTools، ستلاحظ أن جميع الروابط الموجودة في الجزء المرئي من الصفحة عند تحميلها ستبدأ في التحضير المُسبق فورًا بعد تشغيل حدث `load`على صفحتك (يتم تشغيله عند تحميل الصفحة بالكامل، ويحدث بعد `DOMContentLoaded`)
 
 سيتم تحضير أي علامة `Link` أخرى غير موجودة في العرض مسبقًا عندما يقوم المستخدم بالتمرير.
 
@@ -747,8 +782,6 @@ export default Blog
 </Link>
 ```
 
-
-
 ## استخدام المُوجّه Router لتحديد الصفحة النَشِطة (Active Link)<a id="p16"></a>
 
 تتمثل إحدى الميزات المهمة جدًا عند العمل مع `Link` في تحديد عنوان رابط الصفحة النشطة بحيث يكون مختلفًا عن عناوين URL الأخرى.
@@ -760,73 +793,69 @@ export default Blog
 داخل المكون، نحدد ما إذا كان اسم المسار الحالي للصفحة يطابق سمة `href` للمكون، فإن كان الأمر كذلك، سنخبره بإرفاق صنف (class) مثلا "selected".وأخيراً نعيدهم عبر `React.cloneElement()`.
 
 ```js
-import React from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default ({ href, children }) => {
-  const router = useRouter()
+  const router = useRouter();
 
-  let className = children.props.className || ''
+  let className = children.props.className || "";
   if (router.pathname === href) {
-    className = `${className} selected`
+    className = `${className} selected`;
   }
 
-  return <Link href={href}>{React.cloneElement(children, { className })}</Link>
-}
+  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+};
 ```
-
-
 
 ## استخدام next/router <a id="p17"></a>
 
-لقد رأينا بالفعل كيفية استخدام `Link` لإدارة التوجيه في تطبيقات Next.js.   ومن السهل إدارة الموجّه في JSX، ولكن في بعض الأحيان تحتاج إلى إجراء تغيير في التوجيه برمجيًا.
+لقد رأينا بالفعل كيفية استخدام `Link` لإدارة التوجيه في تطبيقات Next.js. ومن السهل إدارة الموجّه في JSX، ولكن في بعض الأحيان تحتاج إلى إجراء تغيير في التوجيه برمجيًا.
 
 في هذه الحالة، يمكنك الوصول إلى الموجّه Next.js مباشرةً، المتوفر في حزمة `next/router`، واستدعاء `push()`.
 
 فيما يلي مثال على الوصول إلى الموجّه:
 
 ```js
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
   //...
-}
+};
 ```
 
-
-
-بعد تعريف كائن الموجّه  `useRouter()` يمكننا إستخدامه الآن.
+بعد تعريف كائن الموجّه `useRouter()` يمكننا إستخدامه الآن.
 
 هذا الموّجه يعمل من جهة المستخدم فقط أو الواجهة الأمامية، أسهل طريقة للتأكد من ذلك هي تضمينه داخل الخطاف `useEffect()`، أو `componentDidMount()` في الأسلوب القديم.
 
-من المحتمل أنك تستخدم  `push()` و `prefetch()` في أغلب الأحيان.
+من المحتمل أنك تستخدم `push()` و `prefetch()` في أغلب الأحيان.
 
-`push()` تسمح لنا بتغيير الرابط برمجياً. 
+`push()` تسمح لنا بتغيير الرابط برمجياً.
 
 ```js
-router.push('/login')
+router.push("/login");
 ```
 
 `prefetch()` يسمح لنا بالتحضير المسبق للعنوان، وهو مفيد عندما لا يكون لدينا وسم Link tag الذي يتعامل تلقائياً مع prefetching:
 
 ```js
-router.prefetch('/login')
+router.prefetch("/login");
 ```
 
 مثال كامل:
 
 ```js
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
-    router.prefetch('/login')
-  })
-}
+    router.prefetch("/login");
+  });
+};
 ```
 
 يمكنك أيضًا استخدام الموجّه للاستماع إلى [أحداث تغيير المسار ( route change events)](https://nextjs.org/docs#router-events) .
@@ -836,21 +865,21 @@ export default () => {
 في المرة الماضية رأينا كيف استلمنا البيانات من ملف json ولكن ظهرت لنا مشكلة undefined.
 
 ```js
-import { useRouter } from 'next/router'
-import posts from '../../posts.json'
+import { useRouter } from "next/router";
+import posts from "../../posts.json";
 
 export default () => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const post = posts[router.query.id]
+  const post = posts[router.query.id];
 
   return (
     <>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </>
-  )
-}
+  );
+};
 ```
 
 الخطأ:
@@ -875,7 +904,7 @@ const Post = () => {  //...}Post.getInitialProps = () => {  //...}export default
 
 تحصل هذه الدالة على كائن كوسيط لها، والتي تحتوي على العديد من الخصائص. الشيء الذي نهتم به الآن هو أننا نحصل على `query` الكائن، الذي استخدمناه سابقًا للحصول على معرّف التدوينة.
 
-لذلك يمكننا الحصول عليه باستخدام بناء جملة تفكيك البنية (*destructuring* syntax) :
+لذلك يمكننا الحصول عليه باستخدام بناء جملة تفكيك البنية (_destructuring_ syntax) :
 
 ```js
 Post.getInitialProps = ({ query }) => {  //...}
@@ -884,30 +913,32 @@ Post.getInitialProps = ({ query }) => {  //...}
 الآن يمكننا إعادة التدوينة من هذه الوظيفة:
 
 ```js
-Post.getInitialProps = ({ query }) => {  return {    post: posts[query.id]  }}
+Post.getInitialProps = ({ query }) => {
+  return { post: posts[query.id] };
+};
 ```
 
 ويمكننا أيضًا إزالة استيراد `useRouter`، ونحصل على التدوينة من خاصية `props`التي تم تمريرها إلى المكوّن `Post`:
 
 ```js
-import posts from '../../posts.json'
+import posts from "../../posts.json";
 
-const Post = props => {
+const Post = (props) => {
   return (
     <div>
       <h1>{props.post.title}</h1>
       <p>{props.post.content}</p>
     </div>
-  )
-}
+  );
+};
 
 Post.getInitialProps = ({ query }) => {
   return {
-    post: posts[query.id]
-  }
-}
+    post: posts[query.id],
+  };
+};
 
-export default Post
+export default Post;
 ```
 
 الآن لن يكون هناك خطأ، وسيعمل SSR كما هو متوقع، كما ترى عند التحقق من عرض مصدر الصفحة:
@@ -935,11 +966,9 @@ export default Post
 
 إذا كنت قد أكملت تعلّم Node.js سابقاً، فستكون req و res مألوفة لك.
 
-
-
 ## التنسيق عبر CSS <a id="p19"></a>
 
-كيف يمكننا تنسيق المكوّنات في Next.js؟ 
+كيف يمكننا تنسيق المكوّنات في Next.js؟
 
 لدينا الكثير من الحرّية أو المكتبات التي نفضلها. لكن Next.js يأتي مدمجًا بـ [`styled-jsx`](https://github.com/zeit/styled-jsx)، لأن هذه مكتبة أنشأها نفس الأشخاص الذين يعملون على Next.js.
 
@@ -962,7 +991,11 @@ export default Post
 داخل هذه الشفرة الغريبة، نكتب تنسيق CSS عادي، تمامًا كما نفعل في ملف `.css`:
 
 ```js
-<style jsx>{`  h1 {    font-size: 3rem;  }`}</style>
+<style jsx>{`
+  h1 {
+    font-size: 3rem;
+  }
+`}</style>
 ```
 
 فتصير:
@@ -970,81 +1003,81 @@ export default Post
 ```js
 const Index = () => (
   <div>
-		<h1>Home page</h1>
+    <h1>Home page</h1>
 
-		<style jsx>{`
-		  h1 {
-		    font-size: 3rem;
-		  }
-		`}</style>
+    <style jsx>{`
+      h1 {
+        font-size: 3rem;
+      }
+    `}</style>
   </div>
-)
+);
 
-export default Index
+export default Index;
 ```
 
 داخل block، يمكننا استخدام تضمين خصائص داخلها لتغيير القيمة ديناميكيًا. على سبيل المثال، نفترض هنا أن المكون الرئيسي يمرر خاصية `size` ويستخدمه في كتلة `style-jsx`:
 
 ```js
-const Index = props => (
+const Index = (props) => (
   <div>
-		<h1>Home page</h1>
+    <h1>Home page</h1>
 
-		<style jsx>{`
-		  h1 {
-		    font-size: ${props.size}rem;
-		  }
-		`}</style>
+    <style jsx>{`
+      h1 {
+        font-size: ${props.size}rem;
+      }
+    `}</style>
   </div>
-)
+);
 ```
 
 إذا كنت ترغب في تطبيق بعض تنسيقات CSS كعامة لجميع المكوّنات، فبدلاً من تقييدها أو تكرارها، يمكنك إضافة الكلمة الأساسية `global` إلى `style`:
 
 ```jsx
 <style jsx global>{`
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
 `}</style>
 ```
 
 إذا كنت تريد استيراد ملف CSS خارجي في مكون Next.js فقم باستدعائها مباشرة:
 
 ```js
-import '../style.css'
+import "../style.css";
 ```
 
 ## استخدام وُسوم مخصّصة داخل Head <a id="p20"></a>
 
-في Next.js يمكنك إضافة وُسوم مخصّصة (head tags) مثل عنوان الصفحة (title) ووصف الصفحة (description) إلى آخره. 
+في Next.js يمكنك إضافة وُسوم مخصّصة (head tags) مثل عنوان الصفحة (title) ووصف الصفحة (description) إلى آخره.
 
 كيف يمكنك فعل ذلك؟
 
 داخل كل مكون يمكنك استيراد `Head` الموجود بـ `next/head` وإدراجه في المكون JSX الخاص بك:
 
 ```js
-import Head from 'next/head'
+import Head from "next/head";
 
-const House = props => (
+const House = (props) => (
   <div>
     <Head>
       <title>The page title</title>
     </Head>
     {/* the rest of the JSX */}
   </div>
-)
+);
 
-export default House
+export default House;
 ```
 
 يمكنك إضافة أي علامة HTML تريد أن تظهر في قسم الصفحة `<head>`.
 
-عند تثبيت المكون، سيضمن Next.js إضافة العلامات الموجودة في إلى `Head`.  نفس الشيء عند إلغاءها، سيهتم Next.js بإزالة تلك العلامات.
+عند تثبيت المكون، سيضمن Next.js إضافة العلامات الموجودة في إلى `Head`. نفس الشيء عند إلغاءها، سيهتم Next.js بإزالة تلك العلامات.
 
 ## تصميم وتغليف مكوّنات الصفحة (Wrapper Component) <a id="p21"></a>
 
-عند تصميم الصفحة، عادة لدينا مكونات مختلفة مثل `nav` و `sidebar` ..إلى آخره. 
+عند تصميم الصفحة، عادة لدينا مكونات مختلفة مثل `nav` و `sidebar` ..إلى آخره.
 
 فكيف تبني مثل هذا النظام في Next.js؟
 
@@ -1070,11 +1103,11 @@ export default Page => {
 ويمكنك استخدامه في كل صفحة مثل هذا:
 
 ```js
-import withLayout from '../components/Layout.js'
+import withLayout from "../components/Layout.js";
 
-const Page = () => <p>Here's a page!</p>
+const Page = () => <p>Here's a page!</p>;
 
-export default withLayout(Page)
+export default withLayout(Page);
 ```
 
 لكنني وجدت أن هذا ينطبق فقط على الحالات البسيطة، ولا تحتاج إلى استدعاء `getInitialProps()` على الصفحة.
@@ -1101,34 +1134,26 @@ export default props => (
 وفي صفحاتنا نستخدمها الآن على النحو التالي:
 
 ```js
-import Layout from '../components/Layout.js'
+import Layout from "../components/Layout.js";
 
-const Page = () => (
-  <Layout content={(
-    <p>Here's a page!</p>
-  )} />
-)
+const Page = () => <Layout content={<p>Here's a page!</p>} />;
 ```
 
 تسمح لنا هذه الطريقة باستخدام `getInitialProps()` من مكون الصفحة، والعيب الوحيد هو أنه يجب كتابة المكون JSX في خاصية `content`:
 
 ```js
-import Layout from '../components/Layout.js'
+import Layout from "../components/Layout.js";
 
-const Page = () => (
-  <Layout content={(
-    <p>Here's a page!</p>
-  )} />
-)
+const Page = () => <Layout content={<p>Here's a page!</p>} />;
 
 Page.getInitialProps = ({ query }) => {
   //...
-}
+};
 ```
 
 ## مسارات API <a id="p22"></a>
 
-بالإضافة إلى إنشاء **مسارات الصفحات (Page Routes)**، مما يعني أن الصفحات يتم تقديمها إلى المتصفح كصفحات ويب، يمكن لـ Next.js أيضًا إنشاء مسارات  API.
+بالإضافة إلى إنشاء **مسارات الصفحات (Page Routes)**، مما يعني أن الصفحات يتم تقديمها إلى المتصفح كصفحات ويب، يمكن لـ Next.js أيضًا إنشاء مسارات API.
 
 هذه ميزة مثيرة للغاية لأنها تعني أنه يمكن استخدام Next.js لإنشاء واجهة أمامية للبيانات المخزنة والمسترجعة بواسطة Next.js نفسها، ولإرسال JSON من خلال طلبات get.
 
@@ -1156,11 +1181,11 @@ Page.getInitialProps = ({ query }) => {
 إليك نموذج التعليمات البرمجية، والذي يعود إلى المستخدم بقائمة التعليقات:
 
 ```js
-import comments from './comments.json'
+import comments from "./comments.json";
 
 export default (req, res) => {
-  res.status(200).json(comments)
-}
+  res.status(200).json(comments);
+};
 ```
 
 سيستمع إلى الرابط `/api/comments`، ويمكنك محاولة مناداته (calling) به باستخدام متصفحك:
@@ -1172,11 +1197,11 @@ export default (req, res) => {
 في الداخل، `[id].js`يمكنك استرداد القيمة `id`من خلال البحث عنها داخل الكائن `req.query`:
 
 ```js
-import comments from '../comments.json'
+import comments from "../comments.json";
 
 export default (req, res) => {
-  res.status(200).json({ post: req.query.id, comments })
-}
+  res.status(200).json({ post: req.query.id, comments });
+};
 ```
 
 هنا، يمكنك أن ترى أن نتيجة الشفرة أعلاه:
@@ -1194,17 +1219,17 @@ export default (req, res) => {
 ```js
 export default (req, res) => {
   switch (req.method) {
-    case 'GET':
+    case "GET":
       //...
-      break
-    case 'POST':
+      break;
+    case "POST":
       //...
-      break
+      break;
     default:
-      res.status(405).end() //Method Not Allowed
-      break
+      res.status(405).end(); //Method Not Allowed
+      break;
   }
-}
+};
 ```
 
 بالإضافة إلى req.query و req.method الذي رأيناه بالفعل، يمكننا أيضًا الوصول إلى ملفات تعريف الارتباط من خلال الرجوع إلى req.cookies (نص الطلب في req.body).
@@ -1220,8 +1245,7 @@ export default (req, res) => {
 هذه الخاصية موجودة فقط داخل المتصفح، لذا يمكنك التحقق منها:
 
 ```js
-if (typeof window === 'undefined') {
-
+if (typeof window === "undefined") {
 }
 ```
 
@@ -1230,16 +1254,13 @@ if (typeof window === 'undefined') {
 وبالمثل، يمكنك فقط تنفيذ من جهة المستخدم فقط عن طريق التحقق
 
 ```js
-if (typeof window !== 'undefined') {
-
+if (typeof window !== "undefined") {
 }
 ```
 
-**خدعة JS**: نستخدم الدالة  `typeof` هنا لأننا لا نستطيع اكتشاف القيم غير المعرفة بوسائل أخرى. إذا كان `if (window === undefined)`، فلن نتمكن من تنفيذه  لأننا سنحصل على خطأ وقت تشغيل "window is not defined".
+**خدعة JS**: نستخدم الدالة `typeof` هنا لأننا لا نستطيع اكتشاف القيم غير المعرفة بوسائل أخرى. إذا كان `if (window === undefined)`، فلن نتمكن من تنفيذه لأننا سنحصل على خطأ وقت تشغيل "window is not defined".
 
 كتحسين لوقت بناء تطبيقك،، يزيل Next.js أيضًا الكود الذي يستخدم تلك التحققات من الحزم. لن تتضمن الحزمة من جانب المستخدم الشرط `if (typeof window === 'undefined') {}`.
-
-
 
 ## تصدير النسخة النهائية <a id="p24"></a>
 
@@ -1281,9 +1302,7 @@ npm run start
 
 ![img](https://i.suar.me/MGd3W/)
 
-يمكننا الآن زيارة النسخة النهائية: [http://localhost:3000](http://localhost:3000/) 
-
-
+يمكننا الآن زيارة النسخة النهائية: [http://localhost:3000](http://localhost:3000/)
 
 ## رفع التطبيق على Vercel <a id="p25"></a>
 
@@ -1369,11 +1388,11 @@ npm install --dev cross-env @next/bundle-analyzer
 قم بإنشاء ملف `next.config.js` في المجلد الرئيسي للمشروع، بهذا المحتوى:
 
 ```js
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true'
-})
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
 
-module.exports = withBundleAnalyzer({})
+module.exports = withBundleAnalyzer({});
 ```
 
 الآن قم بتشغيل الأمر:
@@ -1448,27 +1467,27 @@ const Post = props => {
 تذكر أنه لا يمكننا إرجاع كائنات معقدة داخل الكائن الذي تم إرجاعه `getInitialProps()`، لذلك نحسب التاريخ بداخله:
 
 ```js
-import posts from '../../posts.json'
+import posts from "../../posts.json";
 
-const Post = props => {
+const Post = (props) => {
   return (
     <div>
       <h1>{props.post.title}</h1>
       <p>Published on {props.date}</p>
       <p>{props.post.content}</p>
     </div>
-  )
-}
+  );
+};
 
 Post.getInitialProps = async ({ query }) => {
-  const moment = (await import('moment')).default()
+  const moment = (await import("moment")).default();
   return {
-    date: moment.format('dddd D MMMM YYYY'),
-    post: posts[query.id]
-  }
-}
+    date: moment.format("dddd D MMMM YYYY"),
+    post: posts[query.id],
+  };
+};
 
-export default Post
+export default Post;
 ```
 
 لاحظ أننا استخدمنا .default() بعد await import؟ لأنه من الضروري الإشارة إلى التصدير الافتراضي في الاستيراد الديناميكي (dynamic import). راجع <https://v8.dev/features/dynamic-import>
@@ -1488,4 +1507,3 @@ export default Post
 الخطوة التالية التي أوصي بها هي قراءة [المستندات الرسمية لـ Next.js جيدًا](https://nextjs.org/docs) لمعرفة المزيد حول جميع الميزات والوظائف التي لم أتحدث عنها، وإلقاء نظرة على جميع الوظائف الإضافية التي [قدمتها المكونات الإضافية Next.js](https://github.com/zeit/next-plugins)، بعضها مذهل جدًا.
 
 </div>
-
