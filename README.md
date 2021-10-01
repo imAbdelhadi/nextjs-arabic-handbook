@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # كتيّب تعلم Next.js بالعربية
 
 ![كتيّب تعلم Next.js بالعربية](/images/book-cover.png)
