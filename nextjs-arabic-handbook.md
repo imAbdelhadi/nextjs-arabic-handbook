@@ -139,23 +139,26 @@ Next.js و[Gatsby](https://www.gatsbyjs.com/)، هما أداتان قويتان
 
 لتثبيت Next.js، يجب تثبيت Node.js.
 
-تأكد من أن لديك أحدث إصدار من Node. تحقق من تنفيذ هذا الأمر `node -v على جهازك، وقارنه بأحدث إصدار LTS مدرج في [https://nodejs.org/](https://nodejs.org/) .
+تأكد من أن لديك أحدث إصدار من Node. تحقق من تنفيذ هذا الأمر `node -v` على جهازك، وقارنه بأحدث إصدار LTS مدرج في [https://nodejs.org/](https://nodejs.org/) .
 
-بعد تثبيت Node.js، ستكون أوامر `npm`متاحة في سطر الأوامر Terminal.
+بعد تثبيت Node.js، ستكون أوامر `npm` متاحة في سطر الأوامر Terminal.
 
 يمكننا اختيار مسارين الآن: استخدام `create-next-app` أو الأسلوب التقليدي الذي يتضمن تثبيت وإعداد تطبيق Next يدويًا.
 
 ### باستخدام create-next-app
 
-إذا كنت معتادًا على ذلك [`create-react-app`](https://nextjs.org/docs/api-reference/create-next-app)،`create-next-app`فهذا هو الشيء نفسه -باستثناء أنه ينشئ تطبيق Next بدلاً من تطبيق React، كما يوحي الاسم.
+إذا كنت معتادًا على ذلك [`create-react-app`](https://nextjs.org/docs/api-reference/create-next-app), `create-next-app`فهذا هو الشيء نفسه -باستثناء أنه ينشئ تطبيق Next بدلاً من تطبيق React، كما يوحي الاسم.
 
 أفترض أنك قمت بتثبيت Node.js سلفا، والذي يأتي مع الأمر [npx](https://docs.npmjs.com/cli/v7/commands/npx) بداية من الإصدار 5.2 مثلاً منذ أكثر من عامين في وقت كتابة هذا الكتيّب. تتيح لنا هذه الأداة المفيدة تنزيل أمر JavaScript وتنفيذه، وسنستخدمه على النحو التالي:
 
-```text
+<div dir="ltr">
+
+```bash
 npx create-next-app
 ```
+</div>
 
-يطلب الأمر: اسم التطبيق وينشئ مجلدًا جديدًا لك بهذا الاسم نفسه، ثم يقوم بتنزيل جميع الحزم التي يحتاجها `react`، `react-dom`، `next` ، مجمّعة في ملف `package.json كما توضحه الصورة التالية:
+يطلب الأمر: اسم التطبيق وينشئ مجلدًا جديدًا لك بهذا الاسم نفسه، ثم يقوم بتنزيل جميع الحزم التي يحتاجها `react`, `react-dom`, `next` ، مجمّعة في ملف `package.json` كما توضحه الصورة التالية:
 
 ![20210407-18-15v95qx](https://i.suar.me/1X37G/l)
 
@@ -167,11 +170,14 @@ npx create-next-app
 
 ![20210407-18-17mz39x](https://i.suar.me/N40Y0/l)
 
-هذه هي الطريقة المُوصى بها لبدء تطبيق Next.js، لأنها تمنحك هيكلًا ونموذجًا للتعليمات البرمجية الجاهزة. هناك أكثر من مجرد نموذج تطبيق افتراضي؛ يمكنك استخدام أي من الأمثلة المخزنة على [https://github.com/zeit/next.js/tree/canary/examples](https://github.com/zeit/next.js/tree/canary/examples) باستخدام الخيار `--example`. على سبيل المثال جرب:
+هذه هي الطريقة المُوصى بها لبدء تطبيق Next.js، لأنها تمنحك هيكلًا ونموذجًا للتعليمات البرمجية الجاهزة. هناك أكثر من مجرد نموذج تطبيق افتراضي؛ يمكنك استخدام أي من الأمثلة المخزنة على [https://github.com/zeit/next.js/tree/canary/examples](https://github.com/zeit/next.js/tree/canary/examples) باستخدام الخيار<span dir ="ltr"> `--example` </span>. على سبيل المثال جرب:
 
-```text
+<div dir="ltr">
+
+```bash
 npx create-next-app --example blog-starter
 ```
+</div>
 
 مما يمنحك نسخة افتراضية لمدونة جاهزة قابلة للاستخدام على الفور مع معاينة بالألوان أيضا syntax highlighting:
 
@@ -183,33 +189,46 @@ npx create-next-app --example blog-starter
 
 قم بإنشاء مجلد فارغ في أي مكان تريد على جهازك، على سبيل المثال في المجلد الرئيس الخاص بك، انتقل إليه عبر كتابة اﻷوامر التالية:
 
-```text
+<div dir="ltr">
+
+```bash
 mkdir nextjs
 cd nextjs
 ```
+</div>
 
 وأنشئ أول مجلّد لمشروعك:
 
-```text
+<div dir="ltr">
+
+```bash
 mkdir firstproject
 cd firstproject
 ```
+</div>
 
 الآن استخدم `npm` لتهيئة مشروع Node:
 
-```text
+<div dir="ltr">
+
+```bash
 npm init -y
 ```
+</div>
 
-يشير الخيار `-y`لـ `npm` لاستخدام الإعدادات الافتراضية لمشروع ما، وملء نموذج `package.json` للملف.
+
+يشير الخيار<span dir ="ltr"> `-y` </span>لـ `npm` لاستخدام الإعدادات الافتراضية لمشروع ما، وملء نموذج `package.json` للملف.
 
 ![20210407-18-1g9hbcp](https://i.suar.me/8LZeE/l)
 
 الآن قم بتثبيت Next وReact:
 
-```text
+<div dir="ltr">
+
+```bash
 npm install next react react-dom
 ```
+</div>
 
 يجب أن يحتوي مجلد مشروعك الآن على ملفين:
 
@@ -222,9 +241,11 @@ npm install next react react-dom
 
 - مجلد `node_modules`.
 
-افتح مجلد المشروع باستخدام المحرر المفضل لديك. المحرر المفضل لدي هو [Vscode](https://code.visualstudio.com/). إذا كان برنامج vscode مثبتًا على جهازك، فيمكنك الأمر `code .`في الطرفية من فتح المجلد الحالي في المحرر إذا كان الأمر لا يعمل، فراجع [هذا](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+افتح مجلد المشروع باستخدام المحرر المفضل لديك. المحرر المفضل لدي هو [Vscode](https://code.visualstudio.com/). إذا كان برنامج vscode مثبتًا على جهازك، فيمكنك الأمر<span dir="ltr"> `code .` </span> في الطرفية من فتح المجلد الحالي في المحرر إذا كان الأمر لا يعمل، فراجع [هذا](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
 
 ملف `package.json` يحتوي الآن على هذا المحتوى:
+
+<div dir="ltr">
 
 ```json
 {
@@ -245,8 +266,11 @@ npm install next react react-dom
   }
 }
 ```
+</div>
 
 واستبدل جزء `scripts` بـ:
+
+<div dir="ltr">
 
 ```json
 "scripts": {
@@ -255,16 +279,19 @@ npm install next react react-dom
   "start": "next start"
 }
 ```
+</div>
 
 لإضافة أوامر بناء وتصدير مشروعنا على Next.js، التي سنستخدمها قريبًا.
 
-**نصيحة:** استخدم `"dev": "next -p 3001",`لتغيير منفذ التشغيل، في هذا المثال، على المنفذ 3001.
+**نصيحة:** استخدم `"dev": "next -p 3001"`، لتغيير منفذ التشغيل، في هذا المثال، على المنفذ 3001.
 
 ![20210407-18-1jn8xh4](https://i.suar.me/mJ1zG/l)
 
-الآن قم بإنشاء مجلد `pages`وإضافة ملف `index.js`.
+الآن قم بإنشاء مجلد `pages` وإضافة ملف `index.js`.
 
 في هذا الملف، لننشئ مكوّن React الأول. سنقوم بتصديره افتراضيا:
+
+<div dir="ltr">
 
 ```js
 const Index = () => (
@@ -275,8 +302,9 @@ const Index = () => (
 
 export default Index;
 ```
+</div>
 
-الآن باستخدام الطرفية Terminal، قم بتشغيل `npm run dev`لبدء خادوم التطوير Next.
+الآن باستخدام الطرفية Terminal، قم بتشغيل `npm run dev` لبدء خادوم التطوير Next.
 
 سيتم تشغيل المشروع على منفذ 3000، على المضيف المحلي localhost.
 
@@ -298,7 +326,7 @@ export default Index;
 
 ![](https://i.suar.me/AAJeB/)
 
-إذا قمت بعرض مصدر الصفحة ، فسترى `<div><h1>Home page</h1></div>`المقتطف في وسم HTML `body`، جنبًا إلى جنب مع مجموعة من ملفات JavaScript -حزم التطبيقات-.
+إذا قمت بعرض مصدر الصفحة ، فسترى `<div><h1>Home page</h1></div>` المقتطف في وسم HTML `body`، جنبًا إلى جنب مع مجموعة من ملفات JavaScript -حزم التطبيقات-.
 
 لا نحتاج إلى إعدادات أخرى، فالعرض من جانب الخادوم SSR يعمل بالفعل.
 
@@ -311,6 +339,8 @@ export default Index;
 ![](https://i.suar.me/vqadw/)
 
 سنضع الشفرة المصدرية في [مُنسق HTML](https://htmlformatter.com/) لإظهاره بشكل أفضل، حتى نتمكن من فهمه:
+
+<div dir="ltr">
 
 ```html
 <!DOCTYPE html>
@@ -383,21 +413,24 @@ export default Index;
   </body>
 </html>
 ```
+</div>
 
 لدينا 4 ملفات جافاسكريبت تم تحميلها مسبقا (preloaded) في `head`، باستخدام `rel="preload" as="script"`:
 
-- `/_next/static/development/pages/index.js` 96 LOC
-- `/_next/static/development/pages/_app.js` 5900 LOC
-- `/_next/static/runtime/webpack.js` 939 LOC
-- `/_next/static/runtime/main.js` 12k LOC
+- <span dir="ltr"> `/_next/static/development/pages/index.js` 96 LOC </span>
+- <span dir="ltr"> `/_next/static/development/pages/_app.js` 5900 LOC </span>
+- <span dir="ltr"> `/_next/static/runtime/webpack.js` 939 LOC </span>
+- <span dir="ltr"> `/_next/static/runtime/main.js` 12k LOC </span>
 
 هذا يعني أن المتصفّح سيقوم بتحميل الملفات (load) في أقرب وقت ممكن قبل أن يتم عمل تدفق للبيانات. دون ذلك، سيتم تحميل ملفات الجافاسكربت مع تأخير إضافي، وهذا يحسّن أداء تحميل الصفحة.
 
 ثم يتم تحميل هذه الملفات الأربعة في نهاية وسم `body`، جنبًا إلى جنب مع:
 
-- `/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js`
+- <span dir ="ltr"> `/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js` </span>
 
 ومقتطف JSON الذي يعيّن بعض الإعدادات الافتراضية لبيانات الصفحة:
+
+<div dir="ltr">
 
 ```js
 <script id="__NEXT_DATA__" type="application/json">
@@ -414,8 +447,9 @@ export default Index;
 }
 </script>
 ```
+</div>
 
-تقوم ملفات الحزم الأربعة التي تم تحميلها بتنفيذ ميزة واحدة تسمى **تقسيم الشفرة البرمجية**. و `index.js`يوفر ملف التعليمات البرمجية اللازمة لصفحة `index` الرئيسة، وإذا كانت لدينا المزيد من الصفحات سيكون لدينا المزيد من الحزم لكل صفحة، والتي ستقوم بتحميلها فقط إذا لزم الأمر واستعرض المستخدم تلك الصفحة -لتوفير وقت تحميل أسرع-
+تقوم ملفات الحزم الأربعة التي تم تحميلها بتنفيذ ميزة واحدة تسمى **تقسيم الشفرة البرمجية**. و `index.js` يوفر ملف التعليمات البرمجية اللازمة لصفحة `index` الرئيسة، وإذا كانت لدينا المزيد من الصفحات سيكون لدينا المزيد من الحزم لكل صفحة، والتي ستقوم بتحميلها فقط إذا لزم الأمر واستعرض المستخدم تلك الصفحة -لتوفير وقت تحميل أسرع-
 
 ## إلام يعني الرمز الذي يظهر أسفل يمين الصفحة؟ <a id="p8"></a>
 
@@ -427,9 +461,9 @@ export default Index;
 
 ![](https://i.suar.me/xNEnr/)
 
-يخبرك هذا الرمز، الذي \_يظهر فقط في وضع التطوير (development mode)، أن الصفحة مؤهلة للتحسين التلقائي الثابت، مما يعني بشكل أساسي أنها لا تعتمد على البيانات التي يتم جلبها في وقت الاستدعاء، ويمكن عرضها مسبقًا وبناء ملف HTML ثابت في وقت البناء عند تشغيل `npm run build`.
+يخبرك هذا الرمز، الذي يظهر فقط في وضع التطوير (development mode)، أن الصفحة مؤهلة للتحسين التلقائي الثابت، مما يعني بشكل أساسي أنها لا تعتمد على البيانات التي يتم جلبها في وقت الاستدعاء، ويمكن عرضها مسبقًا وبناء ملف HTML ثابت في وقت البناء عند تشغيل `npm run build`.
 
-ويمكن تحديد هذا من خلال عدم وجود `getInitialProps()` المرفقة داخل مكوّن الصفحة.
+ويمكن تحديد هذا من خلال عدم وجود<span dir ="ltr"> `getInitialProps()` </span>&nbsp;المرفقة داخل مكوّن الصفحة.
 
 في هذه الحالة، يمكن أن تكون صفحتنا أسرع لأنها ستُقدم ملف HTML ثابت بدلاً من المرور عبر خادوم Node.js الذي يولّد ملفات HTML.
 
@@ -483,7 +517,7 @@ export default Index;
 
 بالإضافة إلى أدوات المطورين لـ React، والتي تعتبر ضرورية لبناء تطبيق Next.js، أودّ التأكيد على طريقتين لتصحيح أخطاء تطبيقات Next.js.
 
-الأولى هي `console.log()`وجميع أدوات [Console API](https://flaviocopes.com/console-api/). الطريقة التي تعمل بها تطبيقات Next ستجعل بيان السجل يعمل في وحدة تحكم المتصفح أو في الطرفية حيث بدأت باستخدام `npm run dev`.
+الأولى هي <span dir ="ltr">`console.log()`</span> وجميع أدوات [Console API](https://flaviocopes.com/console-api/). الطريقة التي تعمل بها تطبيقات Next ستجعل بيان السجل يعمل في وحدة تحكم المتصفح أو في الطرفية حيث بدأت باستخدام `npm run dev`.
 
 على وجه الخصوص، إذا تم تحميل الصفحة من الخادوم، عندما توجه عنوان URL إليها، أو تضغط على زر التحديث / CMD / ctrl-R ، فإن أي تسجيل لوحدة التحكم يحدث في الجهاز.
 
@@ -501,7 +535,7 @@ export default Index;
 
 ![img](https://i.suar.me/YjWaX/)
 
-عندما أريد إضافة صفحة ثانية لتطبيقنا، مثلا صفحة عرض التدوينات `/blog`، وفي الوقت الحالي سننشئ صفحة ثابتة بسيطة داخل مجلد `pages`، تمامًا مثل المكون الأول لدينا `index.js`:
+عندما أريد إضافة صفحة ثانية لتطبيقنا، مثلا صفحة عرض التدوينات <span dir ="ltr">`/blog`</span>، وفي الوقت الحالي سننشئ صفحة ثابتة بسيطة داخل مجلد `pages`، تمامًا مثل المكون الأول لدينا `index.js`:
 
 ![20210415-18-17461ob](https://i.suar.me/zxB6v/l)
 
@@ -513,15 +547,17 @@ export default Index;
 
 ![img](https://i.suar.me/GAW99/)
 
-رابط الصفحة `/blog` يعتمد على اسم الملف، و تموضعه داخل مجلد `pages`.
+رابط الصفحة <span dir ="ltr">`/blog`</span> يعتمد على اسم الملف، و تموضعه داخل مجلد `pages`.
 
 يمكنك إنشاء صفحة `pages/hey/ho`، وستظهر تلك الصفحة على شكل عنوان [http://localhost:3000/hey/ho](http://localhost:3000/hey/ho) .
 
-حاول تصفح الصفحة الجديد وعرض مصدرها، عند تحميلها من الخادوم، سيتم إدراج الحزمة `/_next/static/development/pages/blog.js` كواحدة من الحزم المحملة، ولن تجد`/_next/static/development/pages/index.js`كما هو الحال في الصفحة الرئيسة. هذا لأنه بفضل التقسيم التلقائي للشفرة البرمجية، لا نحتاج إلى الحزمة التي تخدم الصفحة الرئيسة. فقط الحزمة التي تخدم صفحة المدونة.
+حاول تصفح الصفحة الجديد وعرض مصدرها، عند تحميلها من الخادوم، سيتم إدراج الحزمة <span dir ="ltr"> `/_next/static/development/pages/blog.js`</span> كواحدة من الحزم المحملة، ولن تجد <span dir ="ltr">`/_next/static/development/pages/index.js`</span> كما هو الحال في الصفحة الرئيسة. هذا لأنه بفضل التقسيم التلقائي للشفرة البرمجية، لا نحتاج إلى الحزمة التي تخدم الصفحة الرئيسة. فقط الحزمة التي تخدم صفحة المدونة.
 
 ![img](https://i.suar.me/yxBQ7/)
 
 يمكننا أيضًا تصدير وظيفة مجهولة الاسم من `blog.js`:
+
+<div dir="ltr">
 
 ```js
 export default () => (
@@ -530,8 +566,11 @@ export default () => (
   </div>
 );
 ```
+</div>
 
 أو إذا كنت تفضل صيغة الوظيفة العادية:
+
+<div dir="ltr">
 
 ```js
 export default function () {
@@ -542,6 +581,7 @@ export default function () {
   );
 }
 ```
+</div>
 
 ## ربط صفحتين مع بعض <a id="p12"></a>
 
@@ -551,11 +591,16 @@ export default function () {
 
 نقوم باستيرادها:
 
+<div dir="ltr">
+
 ```js
 import Link from "next/link";
 ```
+</div>
 
 ثم نستخدمها بتضمين `a tags`، مثل هذه:
+
+<div dir="ltr">
 
 ```js
 import Link from "next/link";
@@ -571,6 +616,7 @@ const Index = () => (
 
 export default Index;
 ```
+</div>
 
 الآن إذا أعدنا محاولة فحص الصفحة مثلما فعلنا سابقًا، فستتمكن من رؤية أن صفحة `blog.js` يتم تحميل الحزمة الخاصة بها فقط:
 
@@ -578,17 +624,17 @@ export default Index;
 
 تم تحميل الصفحة بشكل أسرع، حتى أن أيقونة التحميل بأعلى صفحة التبويب لن تظهر.
 
-ماذا لو ضغطت الآن على زر العودة؟ لن يتم تحميل أي شيء، لأن المتصفح لا يزال يحتوي على الحزمة القديمة `index.js`، وجاهزة لتحميل صفحة`/index`. كل شيء تلقائي!
+ماذا لو ضغطت الآن على زر العودة؟ لن يتم تحميل أي شيء، لأن المتصفح لا يزال يحتوي على الحزمة القديمة `index.js`، وجاهزة لتحميل صفحة <span dir ="ltr">`/index`</span>. كل شيء تلقائي!
 
 ## المحتوى التفاعلي (Dynamic content) مع المُوجّه (Router )<a id="p13"></a>
 
-رأينا في الفصل السابق كيفية ربط الصفحة الرئيسة بصفحة المدونة. والآن لو أردنا عرض روابط التدوينات بشكل ديناميكي. على سبيل المثال، قد تكون تدوينة بعنوان "Hello World" ورابطها `/blog/hello-world`. وقد تكون تدوينة ثانية بعنوان "مشاركتي الثانية" `/blog/my-second-post`.
+رأينا في الفصل السابق كيفية ربط الصفحة الرئيسة بصفحة المدونة. والآن لو أردنا عرض روابط التدوينات بشكل ديناميكي. على سبيل المثال، قد تكون تدوينة بعنوان "Hello World" ورابطها <span dir ="ltr">`/blog/hello-world`</span>. وقد تكون تدوينة ثانية بعنوان "مشاركتي الثانية" <span dir ="ltr">`/blog/my-second-post`</span>.
 
 يمكن لـ Next.js تقديم محتوى ديناميكي بناءً على **الروابط الديناميكية (dynamic URL)** .
 
 نقوم بإنشاء رابط ديناميكي عن طريق إنشاء صفحة ديناميكية مع `[]`.
 
-كيف؟ سنضيف ملف `pages/blog/[id].js`. وهذا الملف يتعامل مع كل الروابط الديناميكية تحت الرابط `/blog/`، مثل تلك التي أشرنا إليها أعلاه: `/blog/hello-world` إلى آخره.
+كيف؟ سنضيف ملف `pages/blog/[id].js`. وهذا الملف يتعامل مع كل الروابط الديناميكية تحت الرابط `/blog/`، مثل تلك التي أشرنا إليها أعلاه: <span dir ="ltr">`/blog/hello-world`</span> إلى آخره.
 
 في اسم الملف، نضع المعرّف `[id]` داخل الأقواس المربعة وتعني أن أي شيء ديناميكي متغيّر سيتم وضعه داخل المعرّف `id` معلمة **لخاصية الاستعلام (query property)** الخاصة **بالمُوجّه (Router)** .
 
@@ -598,15 +644,21 @@ export default Index;
 
 الموجه عبارة عن مكتبة مقدمة من Next.js. نستوردها من `next/router`:
 
+<div dir="ltr">
+
 ```js
 import { useRouter } from "next/router";
 ```
+</div>
 
 وبمجرد الانتهاء من ذلك نعرّف `useRouter`، بإنشاء مثيل لكائن الموجّه باستخدام:
+
+<div dir="ltr">
 
 ```js
 const router = useRouter();
 ```
+</div>
 
 بمجرد أن نعرّف كائن الموجّه هذا، يمكننا استخراج المعلومات منه.
 
@@ -617,6 +669,8 @@ const router = useRouter();
 لذلك دعونا نستمر ونطبق كل هذه الأشياء عمليًا.
 
 قم بإنشاء الملف على مسار `pages/blog/[id].js`
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -632,12 +686,15 @@ export default () => {
   );
 };
 ```
+</div>
 
 الآن إذا تصفّحت الرابط `http://localhost:3000/blog/test` ، سترى هذه:
 
 ![img](https://i.suar.me/2je13/)
 
-يمكننا استخدام المعرّف `id` لجلب تدوينة معيّنة من قائمة التدوينات بقاعدة البيانات، لتبسيط الأمور على سبيل المثال، سنضيف ملف`posts.json ` في المجلد الرئيسي للمشروع:
+يمكننا استخدام المعرّف `id` لجلب تدوينة معيّنة من قائمة التدوينات بقاعدة البيانات، لتبسيط الأمور على سبيل المثال، سنضيف ملف `posts.json ` في المجلد الرئيسي للمشروع:
+
+<div dir="ltr">
 
 ```json
 {
@@ -651,8 +708,11 @@ export default () => {
   }
 }
 ```
+</div>
 
 الآن يمكننا استيراده والبحث عن التدوينة من المعرّف `id`:
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -671,6 +731,7 @@ export default () => {
   );
 };
 ```
+</div>
 
 عند إعادة تحميل الصفحة المفروض ستظهر لنا هذه:
 
@@ -682,7 +743,9 @@ export default () => {
 
 لماذا؟ لأنه أثناء العرض، وعندما تتم تهيئة المكون، لم تجهّز البيانات بعد. سنرى كيفية توفير البيانات للمكون باستخدام `getInitialProps` في الدرس التالي.
 
-في الوقت الحالي، أضف القليل من التحقق `if (!post) return <p></p>` قبل إرجاع JSX:
+في الوقت الحالي، أضف القليل من التحقق <span dir ="ltr">`if (!post) return <p></p>`</span> قبل إرجاع JSX:
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -702,6 +765,7 @@ export default () => {
   );
 };
 ```
+</div>
 
 الآن يجب أن تعمل الصفحة بشكل عادي. في البداية يتم تقديم المكون بدون إستعلام عن البيانات `router.query.id`. وبعد التقديم، يقوم Next.js بتشغيل تحديث بقيمة الاستعلام وتعرض الصفحة المعلومات الصحيحة.
 
@@ -712,6 +776,9 @@ export default () => {
 سنقوم قريبًا بإصلاح هذه المشكلة التي تفشل في تنفيذ SSR وهذا يؤخر أوقات التحميل لمستخدمينا وتحسين محركات البحث كما تحدثنا سابقاً.
 
 يمكننا إكمال مثال المدونة بإدراج تلك التدوينات في `pages/blog.js`:
+
+
+<div dir="ltr">
 
 ```js
 import posts from "../posts.json";
@@ -730,8 +797,11 @@ const Blog = () => (
 
 export default Blog;
 ```
+</div>
 
 ويمكننا ربطهم بصفحات التدوينات فرادى، عن طريق إستيراد مكتبة `Link` منها `next/link` واستخدامها داخل حلقة التدوينات:
+
+<div dir="ltr">
 
 ```js
 import Link from "next/link";
@@ -757,6 +827,7 @@ const Blog = () => (
 
 export default Blog;
 ```
+</div>
 
 ## التحضير المُسبق Prefetching<a id="p15"></a>
 
@@ -766,9 +837,9 @@ export default Blog;
 
 بمجرد ظهور عنصر مضمّن بداخله `<Link>` في العرض "viewport" (مما يعني أنه مرئي لمستخدم الموقع)، يقوم Next.js بإعداد عنوان URL الذي يشير إليه مسبقًا، طالما أنه رابط محلي (على موقع الويب الخاص بك)، مما يجعل التطبيق سريعًا للغاية للمشاهد.
 
-يتم تشغيل هذا الأسلوب فقط في **وضع النشر أو الإنتاج (Production Mode)** (سنتحدث عن هذا بالتفصيل لاحقًا)، يعني أنه يجب عليك إيقاف التطبيق إذا كنت تقوم بتشغيله `npm run dev`، وتجميع حزمة الإنتاج الخاصة بك `npm run build`وتشغيلها `npm run start`.
+يتم تشغيل هذا الأسلوب فقط في **وضع النشر أو الإنتاج (Production Mode)** (سنتحدث عن هذا بالتفصيل لاحقًا)، يعني أنه يجب عليك إيقاف التطبيق إذا كنت تقوم بتشغيله `npm run dev`، وتجميع حزمة الإنتاج الخاصة بك `npm run build` وتشغيلها `npm run start`.
 
-باستخدام فاحص الشبكة (Network inspector) في DevTools، ستلاحظ أن جميع الروابط الموجودة في الجزء المرئي من الصفحة عند تحميلها ستبدأ في التحضير المُسبق فورًا بعد تشغيل حدث `load`على صفحتك (يتم تشغيله عند تحميل الصفحة بالكامل، ويحدث بعد `DOMContentLoaded`)
+باستخدام فاحص الشبكة (Network inspector) في DevTools، ستلاحظ أن جميع الروابط الموجودة في الجزء المرئي من الصفحة عند تحميلها ستبدأ في التحضير المُسبق فورًا بعد تشغيل حدث `load` على صفحتك (يتم تشغيله عند تحميل الصفحة بالكامل، ويحدث بعد `DOMContentLoaded`)
 
 سيتم تحضير أي علامة `Link` أخرى غير موجودة في العرض مسبقًا عندما يقوم المستخدم بالتمرير.
 
@@ -776,11 +847,14 @@ export default Blog;
 
 يمكنك إلغاء التحضير المسبق لروابط مخصّصة في `Link` عن طريق تعيين الخاصية `prefetch` كـ `false`:
 
+<div dir="ltr">
+
 ```jsx
 <Link href="/a-link" prefetch={false}>
   <a>A link</a>
 </Link>
 ```
+</div>
 
 ## استخدام المُوجّه Router لتحديد الصفحة النَشِطة (Active Link)<a id="p16"></a>
 
@@ -788,9 +862,11 @@ export default Blog;
 
 هذا مفيد بشكل خاص في إذا أردنا تحديد لون مخصص للنافذة على سبيل المثال.
 
-مكتبة `Link`على Next.js لا تفعل ذلك تلقائيًا. لذلك سننشئ مكوّن خاص بنا ونستدعي كل من مكتبة react و Link من `next/link` و useRouter من `next/router`.
+مكتبة `Link` على Next.js لا تفعل ذلك تلقائيًا. لذلك سننشئ مكوّن خاص بنا ونستدعي كل من مكتبة react و Link من `next/link` و useRouter من `next/router`.
 
-داخل المكون، نحدد ما إذا كان اسم المسار الحالي للصفحة يطابق سمة `href` للمكون، فإن كان الأمر كذلك، سنخبره بإرفاق صنف (class) مثلا "selected".وأخيراً نعيدهم عبر `React.cloneElement()`.
+داخل المكون، نحدد ما إذا كان اسم المسار الحالي للصفحة يطابق سمة `href` للمكون، فإن كان الأمر كذلك، سنخبره بإرفاق صنف (class) مثلا "selected".وأخيراً نعيدهم عبر <span dir ="ltr">`React.cloneElement()`</span>.
+
+<div dir="ltr">
 
 ```js
 import React from "react";
@@ -808,14 +884,17 @@ export default ({ href, children }) => {
   return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
 };
 ```
+</div>
 
 ## استخدام next/router <a id="p17"></a>
 
 لقد رأينا بالفعل كيفية استخدام `Link` لإدارة التوجيه في تطبيقات Next.js. ومن السهل إدارة الموجّه في JSX، ولكن في بعض الأحيان تحتاج إلى إجراء تغيير في التوجيه برمجيًا.
 
-في هذه الحالة، يمكنك الوصول إلى الموجّه Next.js مباشرةً، المتوفر في حزمة `next/router`، واستدعاء `push()`.
+في هذه الحالة، يمكنك الوصول إلى الموجّه Next.js مباشرةً، المتوفر في حزمة `next/router`، واستدعاء <span dir ="ltr">`push()`</span>.
 
 فيما يلي مثال على الوصول إلى الموجّه:
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -825,26 +904,35 @@ export default () => {
   //...
 };
 ```
+</div>
 
-بعد تعريف كائن الموجّه `useRouter()` يمكننا إستخدامه الآن.
+بعد تعريف كائن الموجّه <span dir ="ltr">`useRouter()`</span> يمكننا إستخدامه الآن.
 
-هذا الموّجه يعمل من جهة المستخدم فقط أو الواجهة الأمامية، أسهل طريقة للتأكد من ذلك هي تضمينه داخل الخطاف `useEffect()`، أو `componentDidMount()` في الأسلوب القديم.
+هذا الموّجه يعمل من جهة المستخدم فقط أو الواجهة الأمامية، أسهل طريقة للتأكد من ذلك هي تضمينه داخل الخطاف <span dir ="ltr">`useEffect()`</span>، أو <span dir ="ltr">`componentDidMount()`</span> في الأسلوب القديم.
 
-من المحتمل أنك تستخدم `push()` و `prefetch()` في أغلب الأحيان.
+من المحتمل أنك تستخدم <span dir ="ltr">`push()`</span> و <span dir ="ltr">`prefetch()`</span> في أغلب الأحيان.
 
-`push()` تسمح لنا بتغيير الرابط برمجياً.
+<span dir ="ltr">`push()`</span> تسمح لنا بتغيير الرابط برمجياً.
+
+<div dir="ltr">
 
 ```js
 router.push("/login");
 ```
+</div>
 
-`prefetch()` يسمح لنا بالتحضير المسبق للعنوان، وهو مفيد عندما لا يكون لدينا وسم Link tag الذي يتعامل تلقائياً مع prefetching:
+<span dir ="ltr">`prefetch()`</span> يسمح لنا بالتحضير المسبق للعنوان، وهو مفيد عندما لا يكون لدينا وسم Link tag الذي يتعامل تلقائياً مع prefetching:
+
+<div dir="ltr">
 
 ```js
 router.prefetch("/login");
 ```
+</div>
 
 مثال كامل:
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -857,12 +945,15 @@ export default () => {
   });
 };
 ```
+</div>
 
 يمكنك أيضًا استخدام الموجّه للاستماع إلى [أحداث تغيير المسار ( route change events)](https://nextjs.org/docs#router-events) .
 
-## استعلام البيانات عبر getInitialProps() <a id="p18"></a>
+## استعلام البيانات عبر <span dir ="ltr"> getInitialProps() </span> <a id="p18"></a>
 
 في المرة الماضية رأينا كيف استلمنا البيانات من ملف json ولكن ظهرت لنا مشكلة undefined.
+
+<div dir="ltr">
 
 ```js
 import { useRouter } from "next/router";
@@ -881,6 +972,7 @@ export default () => {
   );
 };
 ```
+</div>
 
 الخطأ:
 
@@ -888,37 +980,51 @@ export default () => {
 
 كيف يمكننا حل هذا؟ وكيف نجعل SSR يعمل بطريقة تلقائية؟
 
-يجب علينا تزويد المكوّن بخصائص (props) باستخدام دالة خاصة تسمى `getInitialProps()` ترفق بالمكون.
+يجب علينا تزويد المكوّن بخصائص (props) باستخدام دالة خاصة تسمى <span dir ="ltr">`getInitialProps()`</span> ترفق بالمكون.
 
 للقيام بذلك، نقوم أولاً بتسمية المكون:
+
+<div dir="ltr">
 
 ```js
 const Post = () => {  //...}export default Post
 ```
+</div>
 
 ثم نضيف الوظيفة إليها:
+
+<div dir="ltr">
 
 ```js
 const Post = () => {  //...}Post.getInitialProps = () => {  //...}export default Post
 ```
+</div>
 
 تحصل هذه الدالة على كائن كوسيط لها، والتي تحتوي على العديد من الخصائص. الشيء الذي نهتم به الآن هو أننا نحصل على `query` الكائن، الذي استخدمناه سابقًا للحصول على معرّف التدوينة.
 
 لذلك يمكننا الحصول عليه باستخدام بناء جملة تفكيك البنية (_destructuring_ syntax) :
 
+<div dir="ltr">
+
 ```js
 Post.getInitialProps = ({ query }) => {  //...}
 ```
+</div>
 
 الآن يمكننا إعادة التدوينة من هذه الوظيفة:
+
+<div dir="ltr">
 
 ```js
 Post.getInitialProps = ({ query }) => {
   return { post: posts[query.id] };
 };
 ```
+</div>
 
-ويمكننا أيضًا إزالة استيراد `useRouter`، ونحصل على التدوينة من خاصية `props`التي تم تمريرها إلى المكوّن `Post`:
+ويمكننا أيضًا إزالة استيراد `useRouter`، ونحصل على التدوينة من خاصية `props` التي تم تمريرها إلى المكوّن `Post`:
+
+<div dir="ltr">
 
 ```js
 import posts from "../../posts.json";
@@ -940,6 +1046,7 @@ Post.getInitialProps = ({ query }) => {
 
 export default Post;
 ```
+</div>
 
 الآن لن يكون هناك خطأ، وسيعمل SSR كما هو متوقع، كما ترى عند التحقق من عرض مصدر الصفحة:
 
@@ -955,14 +1062,14 @@ export default Post;
 
 في حالة استدعاء `http://localhost:3000/blog/test`، تكون النتائج كالتالي:
 
-- `/blog/[id]`
-- `/blog/test`
+- <span dir ="ltr"> `/blog/[id]` </span>
+- <span dir ="ltr"> `/blog/test` </span>
 
 وفي حالة العرض من جانب الخادوم، سيتلقى أيضًا:
 
-- `req`: كائن الطلب HTTP.
-- `res`: كائن الإستجابة HTTP.
-- `err`: كائن الخطأ.
+- <span dir ="ltr"> `req`: كائن الطلب HTTP. </span>
+- <span dir ="ltr"> `res`: كائن الإستجابة HTTP. </span>
+- <span dir ="ltr"> `err`: كائن الخطأ. </span>
 
 إذا كنت قد أكملت تعلّم Node.js سابقاً، فستكون req و res مألوفة لك.
 
@@ -978,17 +1085,25 @@ export default Post;
 
 لإضافة CSS إلى مكون React في Next.js، نقوم بتضمينه داخل وسم في JSX، والذي يبدأ بـ:
 
+<div dir="ltr">
+
 ```js
 <style jsx>{`
 ```
+</div>
 
 وينتهي بـ:
+
+<div dir="ltr">
 
 ```js
 `}</style>
 ```
+</div>
 
-داخل هذه الشفرة الغريبة، نكتب تنسيق CSS عادي، تمامًا كما نفعل في ملف `.css`:
+داخل هذه الشفرة الغريبة، نكتب تنسيق CSS عادي، تمامًا كما نفعل في ملف <span dir ="ltr">`.css`</span> :
+
+<div dir="ltr">
 
 ```js
 <style jsx>{`
@@ -997,8 +1112,11 @@ export default Post;
   }
 `}</style>
 ```
+</div>
 
 فتصير:
+
+<div dir="ltr">
 
 ```js
 const Index = () => (
@@ -1015,8 +1133,11 @@ const Index = () => (
 
 export default Index;
 ```
+</div>
 
 داخل block، يمكننا استخدام تضمين خصائص داخلها لتغيير القيمة ديناميكيًا. على سبيل المثال، نفترض هنا أن المكون الرئيسي يمرر خاصية `size` ويستخدمه في كتلة `style-jsx`:
+
+<div dir="ltr">
 
 ```js
 const Index = (props) => (
@@ -1031,8 +1152,11 @@ const Index = (props) => (
   </div>
 );
 ```
+</div>
 
 إذا كنت ترغب في تطبيق بعض تنسيقات CSS كعامة لجميع المكوّنات، فبدلاً من تقييدها أو تكرارها، يمكنك إضافة الكلمة الأساسية `global` إلى `style`:
+
+<div dir="ltr">
 
 ```jsx
 <style jsx global>{`
@@ -1041,12 +1165,16 @@ const Index = (props) => (
   }
 `}</style>
 ```
+</div>
 
 إذا كنت تريد استيراد ملف CSS خارجي في مكون Next.js فقم باستدعائها مباشرة:
+
+<div dir="ltr">
 
 ```js
 import "../style.css";
 ```
+</div>
 
 ## استخدام وُسوم مخصّصة داخل Head <a id="p20"></a>
 
@@ -1055,6 +1183,8 @@ import "../style.css";
 كيف يمكنك فعل ذلك؟
 
 داخل كل مكون يمكنك استيراد `Head` الموجود بـ `next/head` وإدراجه في المكون JSX الخاص بك:
+
+<div dir="ltr">
 
 ```js
 import Head from "next/head";
@@ -1070,6 +1200,7 @@ const House = (props) => (
 
 export default House;
 ```
+</div>
 
 يمكنك إضافة أي علامة HTML تريد أن تظهر في قسم الصفحة `<head>`.
 
@@ -1082,6 +1213,8 @@ export default House;
 فكيف تبني مثل هذا النظام في Next.js؟
 
 هناك طريقتان. أحدهما يستخدم [المكونات ذات الترتيب الأعلى ( Higher Order Component)](https://flaviocopes.com/react-higher-order-components/)، عن طريق إنشاء مكون `components/Layout.js`:
+
+<div dir="ltr">
 
 ```js
 export default Page => {
@@ -1097,10 +1230,13 @@ export default Page => {
   )
 }
 ```
+</div>
 
 هنا، يمكننا استيراد مكونات منفصلة للعنوان أو الشريط الجانبي، ويمكننا أيضًا إضافة جميع تنسيقات CSS التي نحتاجها.
 
 ويمكنك استخدامه في كل صفحة مثل هذا:
+
+<div dir="ltr">
 
 ```js
 import withLayout from "../components/Layout.js";
@@ -1109,14 +1245,17 @@ const Page = () => <p>Here's a page!</p>;
 
 export default withLayout(Page);
 ```
+</div>
 
-لكنني وجدت أن هذا ينطبق فقط على الحالات البسيطة، ولا تحتاج إلى استدعاء `getInitialProps()` على الصفحة.
+لكنني وجدت أن هذا ينطبق فقط على الحالات البسيطة، ولا تحتاج إلى استدعاء <span dir ="ltr">`getInitialProps()`</span> على الصفحة.
 
 لماذا؟
 
-لأنه يتم استدعاء `getInitialProps()` في مكونات الصفحة فقط. ومع ذلك، إذا قمنا بتصدير المكونات ذات الترتيب الأعلى لـ `withLayout()` من الصفحة، فلن يتم استدعاء `Page.getInitialProps()` وستصبح `withLayout.getInitialProps()`.
+لأنه يتم استدعاء <span dir ="ltr">`getInitialProps()`</span> في مكونات الصفحة فقط. ومع ذلك، إذا قمنا بتصدير المكونات ذات الترتيب الأعلى لـ <span dir ="ltr">`withLayout()`</span> من الصفحة، فلن يتم استدعاء <span dir ="ltr">`Page.getInitialProps()`</span> وستصبح <span dir ="ltr">`withLayout.getInitialProps()`</span>.
 
 من أجل تجنب التعقيد غير الضروري لشفراتنا البرمجية، فإن البديل هو استخدام الخصائص (props):
+
+<div dir="ltr">
 
 ```js
 export default props => (
@@ -1130,16 +1269,22 @@ export default props => (
   </div>
 )
 ```
+</div>
 
 وفي صفحاتنا نستخدمها الآن على النحو التالي:
+
+<div dir="ltr">
 
 ```js
 import Layout from "../components/Layout.js";
 
 const Page = () => <Layout content={<p>Here's a page!</p>} />;
 ```
+</div>
 
-تسمح لنا هذه الطريقة باستخدام `getInitialProps()` من مكون الصفحة، والعيب الوحيد هو أنه يجب كتابة المكون JSX في خاصية `content`:
+تسمح لنا هذه الطريقة باستخدام <span dir ="ltr">`getInitialProps()`</span> من مكون الصفحة، والعيب الوحيد هو أنه يجب كتابة المكون JSX في خاصية `content`:
+
+<div dir="ltr">
 
 ```js
 import Layout from "../components/Layout.js";
@@ -1150,6 +1295,7 @@ Page.getInitialProps = ({ query }) => {
   //...
 };
 ```
+</div>
 
 ## مسارات API <a id="p22"></a>
 
@@ -1157,15 +1303,17 @@ Page.getInitialProps = ({ query }) => {
 
 هذه ميزة مثيرة للغاية لأنها تعني أنه يمكن استخدام Next.js لإنشاء واجهة أمامية للبيانات المخزنة والمسترجعة بواسطة Next.js نفسها، ولإرسال JSON من خلال طلبات get.
 
-تجد توجيهات API ضمن المجلد `/pages/api/` ويتم تعيينها نقطة نهاية `/api`.
+تجد توجيهات API ضمن المجلد `/pages/api/` ويتم تعيينها نقطة نهاية <span dir ="ltr">`/api`</span>.
 
 هذه الميزة مفيدة للغاية عند تطوير التطبيقات.
 
 في هذه المسارات، كتبنا كود Node.js (وليس كود React). أنت تنتقل من الواجهة الأمامية إلى الخلفية، ولكن بسلاسة تامة.
 
-لنفترض أن لديك ملفًا`/pages/api/comments.js`يتمثل هدفه في إرجاع تعليقات تدوينة بتنسيق JSON.
+لنفترض أن لديك ملفًا <span dir ="ltr">`/pages/api/comments.js`</span> يتمثل هدفه في إرجاع تعليقات تدوينة بتنسيق JSON.
 
-لنفترض أن لديك قائمة بالتعليقات مخزنة في ملف`comments.json`:
+لنفترض أن لديك قائمة بالتعليقات مخزنة في ملف `comments.json`:
+
+<div dir="ltr">
 
 ```json
 [
@@ -1177,8 +1325,11 @@ Page.getInitialProps = ({ query }) => {
   }
 ]
 ```
+</div>
 
 إليك نموذج التعليمات البرمجية، والذي يعود إلى المستخدم بقائمة التعليقات:
+
+<div dir="ltr">
 
 ```js
 import comments from "./comments.json";
@@ -1187,14 +1338,17 @@ export default (req, res) => {
   res.status(200).json(comments);
 };
 ```
+</div>
 
-سيستمع إلى الرابط `/api/comments`، ويمكنك محاولة مناداته (calling) به باستخدام متصفحك:
+سيستمع إلى الرابط <span dir ="ltr">`/api/comments`</span>، ويمكنك محاولة مناداته (calling) به باستخدام متصفحك:
 
 ![](https://i.suar.me/lX3NN/)
 
-يمكن لمسارات API أيضًا استخدام **التوجيه الديناميكي** مثل الصفحات، واستخدام البنية `[]`لإنشاء مسار API ديناميكي، مثل `/pages/api/comments/[id].js`الذي سيسترد التعليقات الخاصة بمعرف التدوينة.
+يمكن لمسارات API أيضًا استخدام **التوجيه الديناميكي** مثل الصفحات، واستخدام البنية `[]` لإنشاء مسار API ديناميكي، مثل <span dir ="ltr">`/pages/api/comments/[id].js`</span> الذي سيسترد التعليقات الخاصة بمعرف التدوينة.
 
-في الداخل، `[id].js`يمكنك استرداد القيمة `id`من خلال البحث عنها داخل الكائن `req.query`:
+في الداخل، <span dir ="ltr">`[id].js`</span> يمكنك استرداد القيمة `id` من خلال البحث عنها داخل الكائن `req.query`:
+
+<div dir="ltr">
 
 ```js
 import comments from "../comments.json";
@@ -1203,18 +1357,21 @@ export default (req, res) => {
   res.status(200).json({ post: req.query.id, comments });
 };
 ```
+</div>
 
 هنا، يمكنك أن ترى أن نتيجة الشفرة أعلاه:
 
 ![img](https://i.suar.me/er0LP/)
 
-في الصفحات الديناميكية، ستحتاج إلى استيراد `useRouter`من `next/router`، ثم الحصول على كائن الموجّه باستخدام `const router = useRouter()`، ومن ثم سنتمكن من الحصول على القيمة `id`باستخدام `router.query.id`.
+في الصفحات الديناميكية، ستحتاج إلى استيراد `useRouter` من `next/router`، ثم الحصول على كائن الموجّه باستخدام <span dir ="ltr">`const router = useRouter()`</span>، ومن ثم سنتمكن من الحصول على القيمة `id`باستخدام `router.query.id`.
 
 في جانب الخادوم، يكون الأمر أسهل، حيث يتم إرفاق الاستعلام بكائن الطلب.
 
 إذا قمت بتنفيذ طلب POST، فإن جميع الطلبات تعمل بنفس الطريقة - يتم تنفيذ جميع العمليات من خلال هذا التصدير الافتراضي.
 
 لفصل POST عن GET وطرق HTTP الأخرى (PUT، DELETE)، ابحث عن القيمة `req.method`:
+
+<div dir="ltr">
 
 ```js
 export default (req, res) => {
@@ -1231,6 +1388,7 @@ export default (req, res) => {
   }
 };
 ```
+</div>
 
 بالإضافة إلى req.query و req.method الذي رأيناه بالفعل، يمكننا أيضًا الوصول إلى ملفات تعريف الارتباط من خلال الرجوع إلى req.cookies (نص الطلب في req.body).
 
@@ -1244,23 +1402,30 @@ export default (req, res) => {
 
 هذه الخاصية موجودة فقط داخل المتصفح، لذا يمكنك التحقق منها:
 
+<div dir="ltr">
+
 ```js
 if (typeof window === "undefined") {
 }
 ```
+</div>
 
 وقم بتضمين التعليمات البرمجية من جانب الخادوم داخل هذا الشرط.
 
 وبالمثل، يمكنك فقط تنفيذ من جهة المستخدم فقط عن طريق التحقق
 
+<div dir="ltr">
+
 ```js
 if (typeof window !== "undefined") {
 }
 ```
+</div>
 
 **خدعة JS**: نستخدم الدالة `typeof` هنا لأننا لا نستطيع اكتشاف القيم غير المعرفة بوسائل أخرى. إذا كان `if (window === undefined)`، فلن نتمكن من تنفيذه لأننا سنحصل على خطأ وقت تشغيل "window is not defined".
 
-كتحسين لوقت بناء تطبيقك،، يزيل Next.js أيضًا الكود الذي يستخدم تلك التحققات من الحزم. لن تتضمن الحزمة من جانب المستخدم الشرط `if (typeof window === 'undefined') {}`.
+كتحسين لوقت بناء تطبيقك،، يزيل Next.js أيضًا الكود الذي يستخدم تلك التحققات من الحزم.  
+لن تتضمن الحزمة من جانب المستخدم الشرط <span dir ="ltr">`if (typeof window === 'undefined') {}`</span>.
 
 ## تصدير النسخة النهائية <a id="p24"></a>
 
@@ -1270,6 +1435,8 @@ if (typeof window !== "undefined") {
 
 تذكر في فصل "كيفية تثبيت Next.js" لقد أخبرتك بإضافة هذه الأسطر الثلاثة إلى القسم `package.json` `script`:
 
+<div dir="ltr">
+
 ```json
 "scripts": {
   "dev": "next",
@@ -1277,6 +1444,7 @@ if (typeof window !== "undefined") {
   "start": "next start"
 }
 ```
+</div>
 
 حتى الآن، استخدمنا `npm run dev` لاستدعاء الأمر التالي المثبت محليًا في `node_modules/next/dist/bin/next`. يؤدي ذلك تشغيل التطبيق في وضع التطوير، الذي يوفر لنا معاينة المصدر وإعادة التحميل الفوري للتغييرات، وهما وظيفتان مفيدتان جدًا لتصحيح الأخطاء.
 
@@ -1286,19 +1454,25 @@ if (typeof window !== "undefined") {
 
 لذلك، دعونا نصدّر النسخة النهائية من تطبيقنا:
 
+<div dir="ltr">
+
 ```bash
 npm run build
 ```
+</div>
 
 ![img](https://i.suar.me/grZaQ/)
 
-يخبرنا ناتج هذا الأمر أن مسارات معينة (`/` و `/blog` يتم عرضها الآن بتنسيق HTML ثابت/ساكن، وسيتم تقديم `/blog/[id]` بواسطة الواجهة الخلفية Node.js.
+يخبرنا ناتج هذا الأمر أن مسارات معينة `/` و <span dir ="ltr">`/blog`</span> يتم عرضها الآن بتنسيق HTML ثابت/ساكن، وسيتم تقديم <span dir ="ltr">`/blog/[id]`</span> بواسطة الواجهة الخلفية Node.js.
 
 ثم يمكنك تشغيله `npm run start`:
+
+<div dir="ltr">
 
 ```bash
 npm run start
 ```
+</div>
 
 ![img](https://i.suar.me/MGd3W/)
 
@@ -1320,24 +1494,32 @@ npm run start
 
 أفضل طريقة لبدء استخدام Vercel هي استخدام Vercel CLI الرسمي:
 
+<div dir="ltr">
+
 ```
 npm i -g vercel
 ```
+</div>
 
 ثم قم بتشغيل:
+
+<div dir="ltr">
 
 ```bash
 vercel login
 ```
+</div>
 
 إذا لم تسجل بعد، يرجى إنشاء حساب على https://vercel.com/signup قبل المتابعة، ثم إضافة البريد الإلكتروني إلى CLI client.
 
 بعد الانتهاء من ذلك، قم بتشغيل المجلد لمشروع Next.js
 
+<div dir="ltr">
+
 ```bash
 vercel
 ```
-
+</div>
 وسيتم نشر التطبيق على الفور في سحابة Vercel، وستحصل على عنوانك الفريد للتطبيق.
 
 ## تحليل حُزم التطبيق (The App Bundles) <a id="p26"></a>
@@ -1346,13 +1528,18 @@ vercel
 
 افتح ملف package.json للتطبيق وفي قسم scripts أضف هذه الأوامر الثلاثة الجديدة:
 
+<div dir="ltr">
+
 ```json
 "analyze": "cross-env ANALYZE=true next build",
 "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
 "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
 ```
+</div>
 
 مثل:
+
+<div dir="ltr">
 
 ```json
 {
@@ -1378,14 +1565,20 @@ vercel
   }
 }
 ```
+</div>
 
 ثم قم بتثبيت هاتين الحزمتين:
+
+<div dir="ltr">
 
 ```bash
 npm install --dev cross-env @next/bundle-analyzer
 ```
+</div>
 
 قم بإنشاء ملف `next.config.js` في المجلد الرئيسي للمشروع، بهذا المحتوى:
+
+<div dir="ltr">
 
 ```js
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
@@ -1394,12 +1587,16 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 
 module.exports = withBundleAnalyzer({});
 ```
+</div>
 
 الآن قم بتشغيل الأمر:
+
+<div dir="ltr">
 
 ```bash
 npm run analyze
 ```
+</div>
 
 ![img](https://i.suar.me/43r7o/)
 
@@ -1419,13 +1616,18 @@ npm run analyze
 
 لنفترض أننا بحاجة إلى تحميل مكتبة Moment في منشورات مدونتك:
 
+<div dir="ltr">
+
 ```bash
 npm install moment
 ```
+</div>
 
-الآن دعنا نحاكي حقيقة أننا نحتاجها في مسارين مختلفين: `/blog`و `/blog/[id]`.
+الآن دعنا نحاكي حقيقة أننا نحتاجها في مسارين مختلفين: <span dir ="ltr">`/blog`</span>و <span dir ="ltr">`/blog/[id]`</span>.
 
 نستورده في `pages/blog/[id].js`:
+
+<div dir="ltr">
 
 ```jsx
 import moment from 'moment'
@@ -1442,6 +1644,7 @@ const Post = props => {
   )
 }
 ```
+</div>
 
 سأضيف تاريخ اليوم،كمثال.
 
@@ -1449,7 +1652,7 @@ const Post = props => {
 
 ![img](https://i.suar.me/6jEVA/)
 
-`/blog/[id]`لاحظ أن رقم حجم الصفحة صار أحمر اللون، وهو المسار الذي أضفنا إليه Moment.js!
+<span dir ="ltr">`/blog/[id]`</span> لاحظ أن رقم حجم الصفحة صار أحمر اللون، وهو المسار الذي أضفنا إليه Moment.js!
 
 لقد انتقل من ~ 1 كيلو بايت إلى 350 كيلو بايت، وتعتبر صفحة كبيرة جدًا. وذلك لأن مكتبة Moment.js نفسها تبلغ 349 كيلوبايت.
 
@@ -1464,7 +1667,9 @@ const Post = props => {
 بدلاً من ذلك، ما يمكننا فعله هو فصل كل شفرات Moment في حزمة واحدة.
 
 كيف؟ بدلاً من استيراد Moment على مستوى المكون، نقوم بإجراء استيراد غير متزامن داخل getInitialProps، ونحسب القيمة لإرسالها إلى المكون.
-تذكر أنه لا يمكننا إرجاع كائنات معقدة داخل الكائن الذي تم إرجاعه `getInitialProps()`، لذلك نحسب التاريخ بداخله:
+تذكر أنه لا يمكننا إرجاع كائنات معقدة داخل الكائن الذي تم إرجاعه <span dir ="ltr">`getInitialProps()`</span>، لذلك نحسب التاريخ بداخله:
+
+<div dir="ltr">
 
 ```js
 import posts from "../../posts.json";
@@ -1489,14 +1694,15 @@ Post.getInitialProps = async ({ query }) => {
 
 export default Post;
 ```
+</div>
 
-لاحظ أننا استخدمنا .default() بعد await import؟ لأنه من الضروري الإشارة إلى التصدير الافتراضي في الاستيراد الديناميكي (dynamic import). راجع <https://v8.dev/features/dynamic-import>
+لاحظ أننا استخدمنا .<span dir ="ltr">default()</span> بعد await import؟ لأنه من الضروري الإشارة إلى التصدير الافتراضي في الاستيراد الديناميكي (dynamic import). راجع <https://v8.dev/features/dynamic-import>
 
 إذا قمنا الآن بتشغيل `npm run analyze` فسنرى:
 
 ![img](https://i.suar.me/WglYe/)
 
-تعد حزمة `/blog/[id]` صغيرة مرة أخرى لأن Moment انتقلت إلى ملف الحزمة الخاص بها وتحميلها بشكل منفصل بواسطة المتصفح.
+تعد حزمة <span dir ="ltr">`/blog/[id]`</span> صغيرة مرة أخرى لأن Moment انتقلت إلى ملف الحزمة الخاص بها وتحميلها بشكل منفصل بواسطة المتصفح.
 
 ## دليل مسارك القادم <a id="p28"></a>
 
